@@ -1,0 +1,24 @@
+{
+    "name": "The MuffinTime Modpack",
+    "version": "0.1.0",
+    "overrides": [
+        "config"
+    ],
+    "projects": {
+        "muffintime-data-pack": {
+            "type": "DATA_PACK"
+        },
+        "3dskinlayers": {
+            "side": "CLIENT"
+        },
+        "worldedit": {
+            "side": "BOTH"
+        },
+        "RealMuffinTime/chathook": {
+            "side": "SERVER"
+        },
+        "litemoretica": {
+            "side": "BOTH"
+        }
+    }
+}
