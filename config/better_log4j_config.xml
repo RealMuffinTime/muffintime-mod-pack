@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Entire configuration reloads from disk every 10 seconds -->
+<Configuration status="WARN" packages="com.mojang.util,net.minecrell.terminalconsole.util" monitorInterval="10">
+	<Appenders>
+
+		<!--	System out	-->
+		<Console name="SysOut" target="SYSTEM_OUT">
+			<!-- Filter out the authentication errors when starting in development -->
+			<Filters>
+				<RegexFilter regex="^Failed to verify authentication$" onMatch="DENY" onMismatch="NEUTRAL"/>
+				<RegexFilter regex="^Failed to fetch user properties$" onMatch="DENY" onMismatch="NEUTRAL"/>
+				<RegexFilter regex="^Couldn't connect to realms$" onMatch="DENY" onMismatch="NEUTRAL"/>
+			</Filters>
+			<PatternLayout>
+				<LoggerNamePatternSelector defaultPattern="%highlight{[%d{yyyy-MM-dd HH:mm:ss} %level]}{FATAL=red, ERROR=red, WARN=yellow, INFO=normal, DEBUG=green, TRACE=blue} %style{[%logger{1}]}{cyan} %highlight{%msg{nolookups}%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=normal, DEBUG=green, TRACE=blue}">
+					<!-- Dont show the logger name for minecraft classes-->
+					<PatternMatch key="net.minecraft.,com.mojang." pattern="%highlight{[%d{yyyy-MM-dd HH:mm:ss} %level]}{FATAL=red, ERROR=red, WARN=yellow, INFO=normal, DEBUG=green, TRACE=blue} %highlight{%msg{nolookups}%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=normal, DEBUG=green, TRACE=blue}"/>
+				</LoggerNamePatternSelector>
+			</PatternLayout>
+		</Console>
+
+		<!--	Vanilla server gui	-->
+		<Queue name="ServerGuiConsole" ignoreExceptions="true">
+			<PatternLayout>
+				<LoggerNamePatternSelector defaultPattern="[%d{yyyy-MM-dd HH:mm:ss} %level] [%logger{1}] %msg{nolookups}%n">
+					<!-- Dont show the logger name for minecraft classes-->
+					<PatternMatch key="net.minecraft.,com.mojang." pattern="[%d{yyyy-MM-dd HH:mm:ss} %level] %msg{nolookups}%n"/>
+				</LoggerNamePatternSelector>
+			</PatternLayout>
+		</Queue>
+
+		<!--	latest.log same as vanilla	-->
+		<RollingRandomAccessFile name="LatestFile" fileName="logs/latest.log" filePattern="logs/%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout>
+				<LoggerNamePatternSelector defaultPattern="[%d{yyyy-MM-dd HH:mm:ss} %level] [%logger{1}] %msg{nolookups}%n">
+					<!-- Dont show the logger name for minecraft classes-->
+					<PatternMatch key="net.minecraft.,com.mojang." pattern="[%d{yyyy-MM-dd HH:mm:ss} %level] %msg{nolookups}%n"/>
+				</LoggerNamePatternSelector>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingRandomAccessFile>
+
+		<!--	Debug log file	-->
+		<RollingRandomAccessFile name="DebugFile" fileName="logs/debug.log" filePattern="logs/debug-%i.log.gz">
+			<PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss} %level] [%logger] %msg{nolookups}%n" />
+
+			<Policies>
+				<SizeBasedTriggeringPolicy size="200MB"/>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+
+		</RollingRandomAccessFile>
+	</Appenders>
+	<Loggers>
+		<Logger level="${sys:fabric.log.level:-info}" name="net.minecraft"/>
+		<Root level="all">
+			<AppenderRef ref="DebugFile" level="${sys:fabric.log.debug.level:-debug}"/>
+			<AppenderRef ref="SysOut" level="${sys:fabric.log.level:-info}"/>
+			<AppenderRef ref="LatestFile" level="${sys:fabric.log.level:-info}"/>
+			<AppenderRef ref="ServerGuiConsole" level="${sys:fabric.log.level:-info}"/>
+		</Root>
+	</Loggers>
+</Configuration>

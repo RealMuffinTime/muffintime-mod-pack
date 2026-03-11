@@ -19,6 +19,13 @@
         },
         "litemoretica": {
             "side": "BOTH"
+        },
+        "better-log4j-config": {
+            "update_strategy": "NONE"
+        },
+        "catppuccin-addon": {
+            "update_strategy": "NONE"
         }
-    }
+    },
+    "export_server_side_projects_to_client": true
 }
