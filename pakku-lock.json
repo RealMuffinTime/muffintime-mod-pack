@@ -130,6 +130,50 @@
             ]
         },
         {
+            "pakku_id": "evHsmjxyft2F4ZEc",
+            "pakku_links": [
+                "BzWCmVK4DD3L1r7x"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "async"
+            },
+            "name": {
+                "modrinth": "Async"
+            },
+            "id": {
+                "modrinth": "vEC2jm6I"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "async-fabric-0.2.0+alpha-1.21.10.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://cdn.modrinth.com/data/vEC2jm6I/versions/N5cXcG5o/async-fabric-0.2.0+alpha-1.21.10.jar",
+                    "id": "N5cXcG5o",
+                    "parent_id": "vEC2jm6I",
+                    "hashes": {
+                        "sha512": "e22bc14b99a6f4bbac326e8246ee9295afe8d234fd78abb73d314284516368186efc7b0bbf76692a0e11416cf37fd6a697c38a1fa811ac1db7ecc9b0166a58ea",
+                        "sha1": "ec842b72a977ae0dcc2ce66fb603ca3dfb5c29de"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 738837,
+                    "date_published": "2026-02-23T17:39:15.202664Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "V7llljQV95tjb5Qu",
             "type": "MOD",
             "side": "BOTH",
@@ -793,6 +837,50 @@
             ]
         },
         {
+            "pakku_id": "14IshYTBcbGMvEc5",
+            "pakku_links": [
+                "BzWCmVK4DD3L1r7x"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "craterlib"
+            },
+            "name": {
+                "modrinth": "CraterLib"
+            },
+            "id": {
+                "modrinth": "Nn8Wasaq"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "CraterLib-Fabric-1.21.9-3.1.2.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Nn8Wasaq/versions/tyDbWvpB/CraterLib-Fabric-1.21.9-3.1.2.jar",
+                    "id": "tyDbWvpB",
+                    "parent_id": "Nn8Wasaq",
+                    "hashes": {
+                        "sha512": "caa6ea806f65a226d7d573369f1f199571904d4786ecaca09e3bf68ab06309ea1edd55206b8911ab1c4630b2b26852487b92bc58ba254a89cc0572cb611a0e2f",
+                        "sha1": "457d2bff7b586b8ef4f3b346696746848ae750b7"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 1488787,
+                    "date_published": "2026-05-20T09:32:28.433619Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "sgw0caIGaasRRnLm",
             "type": "MOD",
             "side": "SERVER",
@@ -839,62 +927,6 @@
                     "date_published": "2024-11-23T15:55:05.797575Z"
                 }
             ]
-        },
-        {
-            "pakku_id": "u3LgH2o75icZrBkZ",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "distanthorizons"
-            },
-            "name": {
-                "modrinth": "Distant Horizons"
-            },
-            "id": {
-                "modrinth": "uCdwusMi"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "DistantHorizons-2.4.5-b-1.21.10-fabric-neoforge.jar",
-                    "mc_versions": [
-                        "1.21.10"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/CKJFSOC6/DistantHorizons-2.4.5-b-1.21.10-fabric-neoforge.jar",
-                    "id": "CKJFSOC6",
-                    "parent_id": "uCdwusMi",
-                    "hashes": {
-                        "sha512": "82eb7a7d5b071af91641caa2a6fbbb1cdce75a41a3614db85418671b1816af10b597ce8315b04b9cad494b5bdaac415f5caeb4784894737fd7836301f5a7bef8",
-                        "sha1": "2834bbcc43d48d2d62146af18a365b85e48960b9"
-                    },
-                    "required_dependencies": [],
-                    "size": 25617029,
-                    "date_published": "2025-12-25T04:36:17.842247Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "0S9ZWGsAB4xG9Fca",
-            "pakku_links": [
-                "BzWCmVK4DD3L1r7x"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "modrinth": "effective"
-            },
-            "name": {
-                "modrinth": "Effective"
-            },
-            "id": {
-                "modrinth": "pcPXJeZi"
-            },
-            "files": []
         },
         {
             "pakku_id": "jO7EqNVYXCRPotja",
@@ -2868,6 +2900,45 @@
             ]
         },
         {
+            "pakku_id": "YcPWSX039Af8ibpX",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "tt20"
+            },
+            "name": {
+                "modrinth": "TT20 (TPS Fixer)"
+            },
+            "id": {
+                "modrinth": "YS3ZignI"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "tt20-0.8.3+mc1.21.9-fabric.jar",
+                    "mc_versions": [
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/YS3ZignI/versions/6eKh1KNU/tt20-0.8.3+mc1.21.9-fabric.jar",
+                    "id": "6eKh1KNU",
+                    "parent_id": "YS3ZignI",
+                    "hashes": {
+                        "sha512": "b392ad96f14ea1b2b06530a3e292744cfb452f876af5c35df67aa8791932451956c0acd52fb4786d138f28cf15dcf3cf02212febac3ea1d373f69e8938c27628",
+                        "sha1": "a51635370b5cb838ee8d576bbb7b72ac06e1ec13"
+                    },
+                    "required_dependencies": [],
+                    "size": 51714,
+                    "date_published": "2026-05-30T19:18:40.605495Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "6vAKbqxpGlcB89rw",
             "type": "MOD",
             "side": "SERVER",
@@ -3052,6 +3123,22 @@
                     "size": 13006651,
                     "date_published": "2025-12-12T16:01:17.839872Z"
                 }
+            ]
+        },
+        {
+            "pakku_id": "viDneHMy9BrJyZNL",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "voxyserver"
+            },
+            "name": {
+                "modrinth": "Voxy Server"
+            },
+            "id": {
+                "modrinth": "fNtGd1cx"
+            },
+            "files": [
             ]
         },
         {
@@ -3401,6 +3488,7 @@
             "id": {
                 "github": "1011439474"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "github",
@@ -3430,6 +3518,7 @@
             "id": {
                 "github": "821031196"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "github",

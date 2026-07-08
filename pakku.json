@@ -1,5 +1,5 @@
 {
-    "name": "The MuffinTime Modpack",
+    "name": "muffintime-mod-pack",
     "version": "0.1.0",
     "overrides": [
         "config"
@@ -15,7 +15,8 @@
             "side": "BOTH"
         },
         "RealMuffinTime/chathook": {
-            "side": "SERVER"
+            "side": "SERVER",
+            "update_strategy": "NONE"
         },
         "litemoretica": {
             "side": "BOTH"
@@ -25,7 +26,9 @@
         },
         "catppuccin-addon": {
             "update_strategy": "NONE"
+        },
+        "entity-model-features": {
+            "type": "MOD"
         }
-    },
-    "export_server_side_projects_to_client": true
+    }
 }
