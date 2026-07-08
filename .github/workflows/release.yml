@@ -51,7 +51,7 @@ jobs:
           version: "${{env.VERSION}}"
           version-type: release
           game-versions: "${{env.MINECRAFT_VERSION}}"
-          loaders: modpack
+          loaders: fabric
           game-version-filter: releases
           files: "build/modrinth/muffintime-mod-pack-${{env.VERSION}}.mrpack"
 
