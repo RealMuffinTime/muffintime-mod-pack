@@ -53,7 +53,7 @@ jobs:
           game-versions: "${{env.MINECRAFT_VERSION}}"
           loaders: modpack
           game-version-filter: releases
-          files: "build7modrinth/muffintime-mod-pack-${{env.VERSION}}.mrpack"
+          files: "build/modrinth/muffintime-mod-pack-${{env.VERSION}}.mrpack"
 
           # Config for Modrinth
           modrinth-id: 6s2ECxhN

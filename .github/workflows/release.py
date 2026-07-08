@@ -29,15 +29,3 @@ with open("CHANGELOG.md", "r") as inFile:
             minecraftVersions = line.split('`')[1].split("-")
             envFile.write(f"\nMINECRAFT_VERSION=>={minecraftVersions[0]} <={minecraftVersions[-1]}")
             break
-
-# TODO
-zf = zipfile.ZipFile(f"muffintime-mod-pack-{version}.zip", "w")
-for dirname, subdirs, files in os.walk("."):
-    if dirname.startswith(os.path.join(".", ".")):
-        continue
-    if not dirname == ".":
-        zf.write(dirname)
-    for filename in files:
-        if not filename.startswith(".") and not filename.startswith("modrinth") and not filename.startswith("github") and not filename.startswith("muffintime"):
-            zf.write(os.path.join(dirname, filename))
-zf.close()
